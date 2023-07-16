@@ -36,8 +36,6 @@ async function InitProvider(){
     projectId: process.env.NEXT_PUBLIC_PROJECT_ID as string,
     optionalChains:[1, 5, 56, 42161],
     showQrModal: true,
-    methods:[],
-    events:[],
     optionalMethods:[...REQUIRED_METHODS, ...OPTIONAL_METHODS],
     optionalEvents:[...REQUIRED_EVENTS, ...OPTIONAL_EVENTS],
   })

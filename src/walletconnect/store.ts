@@ -18,9 +18,7 @@ async function InitProvider(){
   provider = await EthereumProvider.init({
     projectId: process.env.NEXT_PUBLIC_PROJECT_ID as string,
     optionalChains:[1, 5, 56, 42161],
-    showQrModal: true,
-    optionalMethods:[...REQUIRED_METHODS, ...OPTIONAL_METHODS],
-    optionalEvents:[...REQUIRED_EVENTS, ...OPTIONAL_EVENTS],
+    showQrModal: true
   })
 
   //useSyncExternalStore callback

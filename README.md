@@ -15,13 +15,7 @@ pnpm dev
 ```ts
 // src/walletconnect/store.ts
 
-import {
-  EthereumProvider,
-  REQUIRED_EVENTS,
-  REQUIRED_METHODS,
-  OPTIONAL_EVENTS,
-  OPTIONAL_METHODS
-} from '@walletconnect/ethereum-provider'
+import { EthereumProvider } from '@walletconnect/ethereum-provider'
 
 type Callback = ()=>void
 

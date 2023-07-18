@@ -1,12 +1,11 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
-import { useSyncExternalStore } from 'react'
-import { store } from '@/walletconnect/store'
+import { useProvider } from '@/walletconnect/useProvider'
 
 
 export default function Home() {
 
-  const provider = useSyncExternalStore(store.subscribe, store.getProvider, ()=>null)
+  const provider = useProvider()
 
   async function handleConnect(){
     if(!provider) return

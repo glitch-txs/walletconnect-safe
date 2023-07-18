@@ -25,6 +25,3 @@ export const store = {
   getProvider: ()=>provider,
   subscribe: (cb: Callback)=>callback = cb  
 }
-
-
-
